@@ -3,7 +3,7 @@ using System.Web.Routing;
 
 namespace NetC.JuniorDeveloperExam.Web
 {
-    public class RouteConfig
+    public static class RouteConfig
     {
         public static void RegisterRoutes(RouteCollection routes)
         {

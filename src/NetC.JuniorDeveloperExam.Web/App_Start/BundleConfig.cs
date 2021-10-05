@@ -6,7 +6,7 @@ using System.Web.Optimization;
 
 namespace NetC.JuniorDeveloperExam.Web
 {
-    public class BundleConfig
+    public static class BundleConfig
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
@@ -22,10 +22,6 @@ namespace NetC.JuniorDeveloperExam.Web
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
-
-
-
-
         }
     }
 }
