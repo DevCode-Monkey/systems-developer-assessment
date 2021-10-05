@@ -2,8 +2,8 @@
 
 namespace NetC.JuniorDeveloperExam.Web.Services.Interfaces
 {
-    public interface IJsonManager
+    public interface IBlogManager
     {
-        BlogModel LoadJsonFile(string fileLocation);
+        void ReadAllPosts();
     }
 }

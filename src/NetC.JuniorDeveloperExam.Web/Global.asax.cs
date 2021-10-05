@@ -13,11 +13,11 @@ namespace NetC.JuniorDeveloperExam.Web
     {
         protected void Application_Start()
         {
-            ContainerBuilder builder = new ContainerBuilder();
-            builder.RegisterControllers(typeof(MvcApplication).Assembly);
-            builder.RegisterType<JsonManager>().As<IJsonManager>();
-            IContainer container = builder.Build();
-            DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
+            //ContainerBuilder builder = new ContainerBuilder();
+            //builder.RegisterControllers(typeof(MvcApplication).Assembly);
+            //builder.RegisterType<JsonManager>().As<IJsonManager>();
+            //IContainer container = builder.Build();
+            //DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
 
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
